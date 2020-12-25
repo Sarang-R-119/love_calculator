@@ -11,6 +11,12 @@ class resultsPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         backgroundColor: Colors.red,
+        appBar: AppBar(
+          elevation: 0.0,
+          centerTitle: true,
+          backgroundColor: Colors.transparent,
+          title: Text('Results'),
+        ),
         body: Center(
           child: FittedBox(
             child: Container(

@@ -1,6 +1,7 @@
 import 'dart:convert';
 
 import 'package:flutter/material.dart';
+import 'package:love_calculator/screens/secondaryPage.dart';
 import 'package:love_calculator/widgets/name_container.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert';
@@ -44,7 +45,10 @@ class HomePage extends StatelessWidget {
             var jsonResponse = jsonDecode(response.body);
           // Navigators and routes -> Intents in Android Studio. Also uses a anonymous function.
             // The builder is going to convert the context into a widget.
-            Navigator.push(context, MaterialPageRoute(builder: (context) => null));
+            Navigator.push(context, MaterialPageRoute(builder: (context) => resultsPage(
+              message: jsonResponse['result'],
+              percent: int.parse(jsonResponse['percentage']),
+            )));
           },
         ),
       )

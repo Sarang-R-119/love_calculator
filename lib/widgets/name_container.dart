@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:love_calculator/widgets/custom_button.dart';
 
 class NameContainer extends StatelessWidget {
   @override
@@ -48,6 +49,7 @@ class NameContainer extends StatelessWidget {
                 hintStyle: TextStyle(fontWeight: FontWeight.w600, color: Colors.red),
               ),
             ),
+            CustomButton()
           ],
         ),
       ),

@@ -33,7 +33,7 @@ class HomePage extends StatelessWidget {
           // Getting the host and key headers
             Map<String, String> headers = {
               'x-rapidapi-host': 'love-calculator.p.rapidapi.com',
-              'x-rapidapi-key': '40cd906284mshf322f285a1e564dp1aebfdjsn013d55972b98',
+              'x-rapidapi-key': '',
             };
 
           // await -> Guides the flutter to take time to collect the response
